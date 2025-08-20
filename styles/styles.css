@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+}
+
+.category-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.category-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.banner {
+    color: white;
+    text-align: center;
+    padding: 200px;
+    background: url('../images/technology-785742_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1, .banner h2, .banner h3 {
+    margin: 5px 0;
+}
+
+.banner img {
+    max-width: 200px;
+}
+
+.deals, .top-categories, .top-brands, .daily-essentials {
+    padding: 20px;
+    text-align: center;
+}
+
+.deals h4, .top-categories h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.deal-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.category-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.deal-items .item {
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 17px;
+}
+
+.top-categories .item {
+    margin: 10px;
+    text-align: center;
+    /* border: 1px solid #007bff; */
+    border-radius: 17px;
+}
+
+.item img {
+    max-width: 250px;
+    border-radius: 16px 16px 0 0;
+}
+
+.top-categories .item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.btn-items{
+    cursor: pointer;
+    padding: 13px;
+    margin: 20px 0;
+    border-radius: 30px;
+    background: #007bff;
+}
+
+.view-all {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section h5 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.app-links img {
+    max-width: 120px;
+    margin: 0 10px;
+}
