@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekShop</title>
+    <style>
+        div.main{
+            font-family: sans-serif;
+            background-color: #fff;
+            color: #000;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            flex: 1;
+        }
+
+        div.loader{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            
+        </header>
+
+        <main>
+            <div class="breadcrumb">Home / Contact</div>
+            <section class="contact-section">
+                <aside>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <h3>Call To Us</h3>
+                            <p>We are available 24/7, 7 days a week</p>
+                            <p>Phone: +880181222222</p>
+                        </div>
+                        <div class="info-item">
+                            <hr>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">✉️</span>
+                            <h3>Write To Us</h3>
+                            <p>Fill out our form and we will contact you within 24 hours</p>
+                            <p>Emails: support@GeekShop.com</p>
+                            <p>Emails: support.bangladesh@GeekShop.com</p>
+                        </div>
+                    </div>
+                </aside>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name *" required>
+                            <input type="email" placeholder="Your Email *" required>
+                            <input type="tel" placeholder="Your Phone *" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+
+    <div class="loader"><h1>LOADING...</h1></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

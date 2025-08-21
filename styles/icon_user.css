@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.user-icons span {
+    margin-left: 10px;
+}
+
+.breadcrumb {
+    padding: 10px 20px;
+    color: #888;
+}
+
+.product-section {
+    display: flex;
+    padding: 20px;
+}
+
+.product-images img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    padding-left: 20px;
+    width: 50%;
+}
+
+.product-details h1 {
+    margin: 0 0 10px;
+}
+
+.rating {
+    color: #888;
+}
+
+.rating span {
+    color: #000;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #ff0000;
+    margin: 10px 0;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+.options button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.buy-now {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+.wishlist {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+.delivery-info p {
+    margin: 5px 0;
+}
+
+.related-items {
+    padding: 20px;
+}
+
+.related-items h2 {
+    color: #ff0000;
+}
+
+.item-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 23%;
+}
+
+.discount {
+    background: #ff0000;
+    color: #fff;
+    padding: 2px 5px;
+    position: absolute;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+}
+
+.item-card .rating {
+    color: #888;
+}
+
+.item-card .price {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.item-card button {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section input {
+    padding: 5px;
+}
+
+.footer-section button {
+    padding: 5px 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}

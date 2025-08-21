@@ -4,220 +4,212 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GeekShop</title>
+        <style>
+            div.main{
+                font-family: sans-serif;
+                background-color: #fff;
+                color: #000;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                flex: 1;
+            }
+
+            div.loader{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+            }
+        </style>
+        <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
 
     <body>
-        <header>
-            <nav>
-                <div class="logo">GeekShop</div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search essentials, groceries and more...">
-                    <button>Search</button>
-                </div>
-                <div class="nav-links">
-                    <a href="#">Sign Up/Sign In</a>
-                    <a href="#">Cart</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="banner">
-                <h1>Best Deal Online on smartwatches</h1>
-                <h2>SMART WEARABLE.</h2>
-                <h3>UP to 80% OFF</h3>
-                <img src="smartwatch.jpg" alt="Smartwatch">
-            </section>
 
-            <section class="deals">
-                <h4>Grab the best deal on Network</h4>
-                <div class="deal-items">
-                    <div class="item">
-                        <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Ultra</p>
-                        <p>32 999 FCFA - 42 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M13 4GB</p>
-                        <p>10 999 FCFA - 14 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M33 6GB</p>
-                        <p>16 999 FCFA - 24 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <!-- <div class="item">
-                        <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy A13 4GB</p>
-                        <p>13 999 FCFA - 18 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div> -->
-                    <div class="item">
-                        <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Z Flip</p>
-                        <p>67 999 FCFA - 82 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section>
+        <div class="main">
 
-            <section class="top-categories">
-                <h4>Shop From Top Categories</h4>
-                <div class="category-items">
-                    <div class="item"><img alt="Mobile" src="images/technology-785742_1280.jpg"><p>Hacking</p></div>
-                    <div class="item"><img src="images/technology-785742_1280.jpg" alt="Cosmetics"><p>Network</p></div>
-                    <div class="item"><img src="images/technology-785742_1280.jpg" alt="Electronics"><p>Systeme</p></div>
-                    <div class="item"><img src="images/technology-785742_1280.jpg"><p>Programmation</p></div>
-                    <!-- <div class="item"><img src="images/technology-785742_1280.jpg" alt="Watches"><p>Hacking</p></div>
-                    <div class="item"><img src="images/technology-785742_1280.jpg" alt="Decor"><p>Hacking</p></div>
-                    <div class="item"><img src="images/technology-785742_1280.jpg" alt="Accessories"><p>Hacking</p></div> -->
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section>
+            <header>
 
-            <section class="deals">
-                <h4>Grab the best deal on Hacking</h4>
-                <div class="deal-items">
-                    <div class="item">
-                        <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Ultra</p>
-                        <p>32 999 FCFA - 42 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M13 4GB</p>
-                        <p>10 999 FCFA - 14 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M33 6GB</p>
-                        <p>16 999 FCFA - 24 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <!-- <div class="item">
-                        <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy A13 4GB</p>
-                        <p>13 999 FCFA - 18 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div> -->
-                    <div class="item">
-                        <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Z Flip</p>
-                        <p>67 999 FCFA - 82 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section>
+            </header>
 
-            <section class="deals">
-                <h4>Grab the best deal on Systeme</h4>
-                <div class="deal-items">
-                    <div class="item">
-                        <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Ultra</p>
-                        <p>32 999 FCFA - 42 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M13 4GB</p>
-                        <p>10 999 FCFA - 14 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <div class="item">
-                        <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy M33 6GB</p>
-                        <p>16 999 FCFA - 24 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                    <!-- <div class="item">
-                        <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy A13 4GB</p>
-                        <p>13 999 FCFA - 18 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div> -->
-                    <div class="item">
-                        <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
-                        <p>Galaxy Z Flip</p>
-                        <p>67 999 FCFA - 82 999 FCFA</p>
-                        <span class="btn-items">Voire l'article</span>
-                    </div>
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section>
-            
-            <!-- <section class="top-brands">
-                <h4>Top Electronics Brands</h4>
-                <div class="brand-items">
-                    <div class="item">
-                        <img src="iphone.jpg" alt="iPhone">
-                        <span>iPHONE UP to 80% OFF</span>
-                    </div>
-                    <div class="item">
-                        <img src="realme.jpg" alt="Realme">
-                        <span>REALME UP to 80% OFF</span>
-                    </div>
-                    <div class="item">
-                        <img src="xiaomi.jpg" alt="Xiaomi">
-                        <span>MI UP to 80% OFF</span>
-                    </div>
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section>
-            <section class="daily-essentials">
-                <h4>Daily Essentials</h4>
-                <div class="essential-items">
-                    <div class="item"><img src="vegetables.jpg" alt="Vegetables"><span>Vegetables UP to 60% OFF</span></div>
-                    <div class="item"><img src="fruits.jpg" alt="Fruits"><span>Fruits UP to 60% OFF</span></div>
-                    <div class="item"><img src="strawberry.jpg" alt="Strawberry"><span>Strawberry UP to 60% OFF</span></div>
-                    <div class="item"><img src="mango.jpg" alt="Mango"><span>Mango UP to 60% OFF</span></div>
-                    <div class="item"><img src="cherry.jpg" alt="Cherry"><span>Cherry UP to 60% OFF</span></div>
-                </div>
-                <a href="#" class="view-all">View All</a>
-            </section> -->
-        </main>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h5>MegaMart</h5>
-                    <p>Contact Us</p>
-                    <p>📞 WhatApp: +91-1234</p>
-                    <p>📞 +91-911-2132</p>
-                    <div class="app-links">
-                        <a href="#"><img src="app-store.png" alt="App Store"></a>
-                        <a href="#"><img src="google-play.png" alt="Google Play"></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h5>Most Popular Categories</h5>
-                    <p>Staples</p>
-                    <p>Personal Care</p>
-                    <p>Baby Care</p>
-                    <p>Vegetables &amp; Fruits</p>
-                    <p>Snacks &amp; Foods</p>
-                    <p>Dairy &amp; Bakery</p>
-                </div>
-                <div class="footer-section">
-                    <h5>Customer Services</h5>
-                    <p>About Us</p>
-                    <p>Terms &amp; Conditions</p>
-                    <p>FAQ</p>
-                    <p>Privacy Policy</p>
-                    <p>e-Waste Policy</p>
-                    <p>Cancellations &amp; Returns</p>
-                </div>
-            </div>
-            <div style="border-bottom: 1px solid #9e9e9e;"></div>
-            <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
-        </footer>
+            <main>
+                <section class="banner">
+                    <h1>Best Deal Online on smartwatches</h1>
+                    <h2>SMART WEARABLE.</h2>
+                    <h3>UP to 80% OFF</h3>
+                    <img src="smartwatch.jpg" alt="Smartwatch">
+                </section>
 
+                <section class="deals">
+                    <h4>Grab the best deal on Network</h4>
+                    <div class="deal-items">
+                        <div class="item">
+                            <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
+                            <div>
+                                <p>Galaxy Ultra</p>
+                            <p>32 999 FCFA - 42 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M13 4GB</p>
+                            <p>10 999 FCFA - 14 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M33 6GB</p>
+                            <p>16 999 FCFA - 24 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <!-- <div class="item">
+                            <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy A13 4GB</p>
+                            <p>13 999 FCFA - 18 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div> -->
+                        <div class="item">
+                            <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy Z Flip</p>
+                            <p>67 999 FCFA - 82 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section>
+
+                <section class="top-categories">
+                    <h4>Shop From Top Categories</h4>
+                    <div class="category-items">
+                        <div class="item"><img alt="Mobile" src="images/technology-785742_1280.jpg"><p>Hacking</p></div>
+                        <div class="item"><img src="images/technology-785742_1280.jpg" alt="Cosmetics"><p>Network</p></div>
+                        <div class="item"><img src="images/technology-785742_1280.jpg" alt="Electronics"><p>Systeme</p></div>
+                        <div class="item"><img src="images/technology-785742_1280.jpg"><p>Programmation</p></div>
+                        <!-- <div class="item"><img src="images/technology-785742_1280.jpg" alt="Watches"><p>Hacking</p></div>
+                        <div class="item"><img src="images/technology-785742_1280.jpg" alt="Decor"><p>Hacking</p></div>
+                        <div class="item"><img src="images/technology-785742_1280.jpg" alt="Accessories"><p>Hacking</p></div> -->
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section>
+
+                <section class="deals">
+                    <h4>Grab the best deal on Hacking</h4>
+                    <div class="deal-items">
+                        <div class="item">
+                            <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy Ultra</p>
+                            <p>32 999 FCFA - 42 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M13 4GB</p>
+                            <p>10 999 FCFA - 14 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M33 6GB</p>
+                            <p>16 999 FCFA - 24 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <!-- <div class="item">
+                            <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy A13 4GB</p>
+                            <p>13 999 FCFA - 18 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div> -->
+                        <div class="item">
+                            <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy Z Flip</p>
+                            <p>67 999 FCFA - 82 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section>
+
+                <section class="deals">
+                    <h4>Grab the best deal on Systeme</h4>
+                    <div class="deal-items">
+                        <div class="item">
+                            <img alt="Galaxy Ultra" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy Ultra</p>
+                            <p>32 999 FCFA - 42 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M13 4GB</p>
+                            <p>10 999 FCFA - 14 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <div class="item">
+                            <img alt="Galaxy M33" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy M33 6GB</p>
+                            <p>16 999 FCFA - 24 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                        <!-- <div class="item">
+                            <img alt="Galaxy A13" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy A13 4GB</p>
+                            <p>13 999 FCFA - 18 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div> -->
+                        <div class="item">
+                            <img alt="Galaxy Z Flip" src="images/technology-785742_1280.jpg">
+                            <p>Galaxy Z Flip</p>
+                            <p>67 999 FCFA - 82 999 FCFA</p>
+                            <a href="description_article.html"><div class="btn-items">Voire l'article</div></a>
+                        </div>
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section>
+                
+                <!-- <section class="top-brands">
+                    <h4>Top Electronics Brands</h4>
+                    <div class="brand-items">
+                        <div class="item">
+                            <img src="iphone.jpg" alt="iPhone">
+                            <span>iPHONE UP to 80% OFF</span>
+                        </div>
+                        <div class="item">
+                            <img src="realme.jpg" alt="Realme">
+                            <span>REALME UP to 80% OFF</span>
+                        </div>
+                        <div class="item">
+                            <img src="xiaomi.jpg" alt="Xiaomi">
+                            <span>MI UP to 80% OFF</span>
+                        </div>
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section>
+                <section class="daily-essentials">
+                    <h4>Daily Essentials</h4>
+                    <div class="essential-items">
+                        <div class="item"><img src="vegetables.jpg" alt="Vegetables"><span>Vegetables UP to 60% OFF</span></div>
+                        <div class="item"><img src="fruits.jpg" alt="Fruits"><span>Fruits UP to 60% OFF</span></div>
+                        <div class="item"><img src="strawberry.jpg" alt="Strawberry"><span>Strawberry UP to 60% OFF</span></div>
+                        <div class="item"><img src="mango.jpg" alt="Mango"><span>Mango UP to 60% OFF</span></div>
+                        <div class="item"><img src="cherry.jpg" alt="Cherry"><span>Cherry UP to 60% OFF</span></div>
+                    </div>
+                    <a href="articles.html" class="view-all">View All</a>
+                </section> -->
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
+
+        <div class="loader">
+            <h1>LOADING...</h1>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

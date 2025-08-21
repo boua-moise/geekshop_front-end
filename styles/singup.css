@@ -1,0 +1,48 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.hero img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.signup-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+}
+
+.signup-form h2 {
+    margin-top: 0;
+}
+
+.signup-form input {
+    display: block;
+    width: 92%;
+    margin: 20px 0;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 1px solid #8f8f9d;
+    outline: none;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.signup-form .google-signup {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
