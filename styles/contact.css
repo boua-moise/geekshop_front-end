@@ -1,7 +1,13 @@
+a.contact{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+
+}
+
 .contact-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 0 20px 65px 20px;
 }
 
 .contact-info {

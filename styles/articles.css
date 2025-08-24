@@ -1,3 +1,9 @@
+div.articles{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+
+}
+
 .breadcrumb {
     margin-left: 100px;
 }
@@ -44,6 +50,7 @@ span.category{
 }
 
 .product-card img {
+    cursor: pointer;
     width: 100%;
     height: auto;
 }

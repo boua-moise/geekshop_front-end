@@ -1,19 +1,38 @@
 const main = document.querySelector("div.main");
 const loader = document.querySelector("div.loader");
 const header = document.querySelector("header");
+const head = document.querySelector("head");
 const footer = document.querySelector("footer");
+
+head.innerHTML += 
+`
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+`
 
 header.innerHTML = 
     `
         <nav>
             <div class="logo"><a href="index.html">GeekShop</a></div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="articles.html">Catégories</a>
-                <a href="contact.html">Contact</a>
-                <a href="apropos.html">About</a>
-                <a href="singup.html">Sign Up</a>
-                <a href="login.html">Log In</a>
+                <a href="index.html" class="index">Home</a>
+                <span class="categorie-menu">
+                    <div class="categorie-btn articles">Category</div>
+                    <div class="dropdown-menu">
+                        <a href="articles.html?categorie=Hacking">Hacking</a>
+                        <a href="articles.html?categorie=Network">Network</a>
+                        <a href="articles.html?categorie=Systeme">Systeme</a>
+                        <a href="articles.html?categorie=Programmation">Programmation</a>
+                        <a href="articles.html?categorie=Hardware">Hardware</a>
+                        <a href="articles.html?categorie=Iot">Iot</a>
+                    </div>
+                </span>
+                <a href="contact.html" class="contact">Contact</a>
+                <a href="apropos.html" class="apropos">About</a>
+                <a href="singup.html" class="singup">Sign Up</a>
+                <a href="login.html" class="login">Log In</a>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="What are you looking for?">
@@ -60,7 +79,6 @@ footer.innerHTML =
     `
 
 window.addEventListener('load', () => {
-    console.log("terminé!");
     main.style.display = "flex";
     loader.style.display = "none";
 })

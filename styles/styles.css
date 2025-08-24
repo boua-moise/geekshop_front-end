@@ -1,3 +1,13 @@
+a.index{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+
+}
+
+.category{
+    cursor: pointer;
+}
+
 .category-menu {
     display: flex;
     justify-content: space-around;
@@ -13,7 +23,7 @@
 .banner {
     color: white;
     text-align: center;
-    padding: 200px;
+    padding: 214px;
     background: url('../images/technology-785742_1280.jpg');
     background-size: cover;
     background-position: center;
@@ -34,7 +44,7 @@
 
 .deals h4, .top-categories h4 {
     font-size: 1.3em;
-    margin-bottom: 20px;
+    margin: 50px;
 }
 
 .deal-items{
@@ -88,6 +98,10 @@
     color: white;
     border-radius: 30px;
     background: #007bff;
+}
+
+.end-section{
+    margin-bottom: 50px;
 }
 
 .view-all {

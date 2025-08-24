@@ -4,6 +4,12 @@ body {
     padding: 0;
 }
 
+a.apropos{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+
+}
+
 main{
     display: flex;
     flex-direction: column;
