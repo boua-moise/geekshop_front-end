@@ -7,7 +7,6 @@ const params = new URLSearchParams(window.location.search);
 // Exemple : récupérer l'ID du produit
 const id = params.get("id");
 
-
 document.addEventListener("DOMContentLoaded", async () => {
     const result = await fetch(`http://127.0.0.1:8000/article/${id}/description`, {
         method: "GET",
@@ -27,13 +26,13 @@ function showDescription(data) {
     contentDescription.innerHTML = 
     `
         <div class="product-images">
-            <img src="https://utfs.io/f/CGJlq42UrdARNDc1ZWZhMzgwMzEyNDM4NDliNDM2ZjY4YjA5NjcwODI=" alt="Gamepad Image 1">
-            <img src="https://utfs.io/f/CGJlq42UrdARNDc1ZWZhMzgwMzEyNDM4NDliNDM2ZjY4YjA5NjcwODI=" alt="Gamepad Image 2">
-            <img src="https://utfs.io/f/CGJlq42UrdARNDc1ZWZhMzgwMzEyNDM4NDliNDM2ZjY4YjA5NjcwODI=" alt="Gamepad Image 3">
-            <img src="https://utfs.io/f/CGJlq42UrdARNDc1ZWZhMzgwMzEyNDM4NDliNDM2ZjY4YjA5NjcwODI=" alt="Gamepad Image 4">
+            <img src="images/technology-785742_1280.jpg" alt="Gamepad Image 1">
+            <img src="images/technology-785742_1280.jpg" alt="Gamepad Image 2">
+            <img src="images/technology-785742_1280.jpg" alt="Gamepad Image 3">
+            <img src="images/technology-785742_1280.jpg" alt="Gamepad Image 4">
         </div>
         <div class="main-image">
-            <img src="https://utfs.io/f/CGJlq42UrdARNDc1ZWZhMzgwMzEyNDM4NDliNDM2ZjY4YjA5NjcwODI=" alt="">
+            <img src="images/technology-785742_1280.jpg" alt="">
         </div>
         <div class="product-details">
             <h1>${data.nom}</h1>
@@ -41,7 +40,7 @@ function showDescription(data) {
             <p class="price">${data.prix} €</p>
             <p>${data.description}</p>
             <div class="options">
-                <a href="panier.html"><button class="buy-now">Buy Now</button></a>
+                <a href="panier.html?id=${data.id}"><button class="buy-now">Add Now</button></a>
             </div>
             <div class="delivery-info">
                 <p>📦 Free Delivery</p>

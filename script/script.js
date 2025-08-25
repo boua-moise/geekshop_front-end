@@ -4,6 +4,8 @@ const header = document.querySelector("header");
 const head = document.querySelector("head");
 const footer = document.querySelector("footer");
 
+const token = sessionStorage.getItem('token');
+
 head.innerHTML += 
 `
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -12,7 +14,67 @@ head.innerHTML +=
     <link rel="manifest" href="favicon/site.webmanifest">
 `
 
-header.innerHTML = 
+document.addEventListener("DOMContentLoaded", async () => {
+    const result = await fetch("http://127.0.0.1:8000/auth/current_user", {
+        method: "GET",
+        headers: {
+            "content-type": "application/json",
+            "Authorization": `Bearer ${token}`
+        }
+    });
+    
+    if (result.status == 200) {
+        const data = await result.json();
+        const dataUser = data.response;
+        const nom = dataUser.nom 
+        const prenom = dataUser.prenom
+        
+        header.innerHTML = 
+    `
+        <nav>
+
+            <div class="logo"><a href="index.html">GeekShop</a></div>
+
+            <div class="nav-links">
+                <a href="index.html" class="index">Home</a>
+
+                <span class="categorie-menu">
+                    <div class="categorie-btn articles">Category</div>
+                    <div class="dropdown-menu">
+                        <a href="articles.html?categorie=Hacking">Hacking</a>
+                        <a href="articles.html?categorie=Network">Network</a>
+                        <a href="articles.html?categorie=Systeme">Systeme</a>
+                        <a href="articles.html?categorie=Programmation">Programmation</a>
+                        <a href="articles.html?categorie=Hardware">Hardware</a>
+                        <a href="articles.html?categorie=Iot">Iot</a>
+                    </div>
+                </span>
+
+                <a href="contact.html" class="contact">Contact</a>
+                <a href="apropos.html" class="apropos">About</a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for?">
+                <button>🔍</button>
+            </div>
+
+            <div class="nav-right">
+                <div class="user-menu">
+                    <div class="user-btn">${dataUser.nom[0]}${dataUser.prenom[0]}</div>
+                    <div class="dropdown-menu">
+                        <a href="account.html">Manage My Account</a>
+                        <a href="#">My Order</a>
+                        <a href="#">My Cancellations</a>
+                        <a href="#">My Reviews</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    `
+    }else{
+        header.innerHTML = 
     `
         <nav>
             <div class="logo"><a href="index.html">GeekShop</a></div>
@@ -40,6 +102,9 @@ header.innerHTML =
             </div>
         </nav>
     `
+    }
+    
+});
 
 footer.innerHTML = 
     `
@@ -81,4 +146,14 @@ footer.innerHTML =
 window.addEventListener('load', () => {
     main.style.display = "flex";
     loader.style.display = "none";
-})
+});
+
+function hiddenLoader(){
+    main.style.display = "flex";
+    loader.style.display = "none";
+}
+
+function showLoader(){
+    main.style.display = "none";
+    loader.style.display = "flex";
+}

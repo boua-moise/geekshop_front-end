@@ -1,11 +1,11 @@
 .breadcrumb {
-    padding: 10px 20px;
+    padding: 30px 20px;
     color: #888;
 }
 
 .welcome {
     padding: 10px 20px;
-    color: #ff0000;
+    color: #007bff;
 }
 
 .account-section {
@@ -36,7 +36,7 @@ aside ul li a {
 }
 
 .profile-edit h2 {
-    color: #ff0000;
+    color: #007bff;
 }
 
 .form-group {
@@ -60,7 +60,7 @@ aside ul li a {
 }
 
 .save {
-    background: #ff0000;
+    background: #007bff;
     color: #fff;
     border: none;
 }

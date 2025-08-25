@@ -35,7 +35,7 @@ products.addEventListener('click', (e) => {
         location.href = `description_article.html?id=${element.id}`;
     }
     
-})
+});
 
 function sendAllArticles(object) {
     products.innerHTML = "";
@@ -48,7 +48,7 @@ function sendAllArticles(object) {
                 <p>${element.nom}</p>
                 <div class="content-price">
                     <p class="price">${element.prix} €</p>
-                    <a href="panier.html"><button>🛒Add</button></a>
+                    <a href="panier.html?id=${element.id}"><button>🛒Add</button></a>
                 </div>
             </article>
         `;
