@@ -14,7 +14,9 @@ head.innerHTML +=
     <link rel="manifest" href="favicon/site.webmanifest">
 `
 
+
 document.addEventListener("DOMContentLoaded", async () => {
+    showLoader();
     const result = await fetch("https://geekshop-back-end.onrender.com/auth/current_user", {
         method: "GET",
         headers: {
@@ -139,11 +141,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
 
     `  
+
+    if (location.pathname.includes("contact")) {
+        console.log("ok");
+        hiddenLoader();
+    }
+
+    if (location.pathname.includes("propos")) {
+        console.log("ok");
+        hiddenLoader();
+    }
+
+    if (location.pathname.includes("login")) {
+        console.log("ok");
+        hiddenLoader();
+    }
+
+    if (location.pathname.includes("singup")) {
+        console.log("ok");
+        hiddenLoader();
+    }
+
 });
-    window.addEventListener('load', () => {
-        main.style.display = "flex";
-        loader.style.display = "none";
-    });
+
 
 function hiddenLoader(){
     main.style.display = "flex";

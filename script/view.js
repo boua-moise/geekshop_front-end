@@ -2,6 +2,7 @@ const contentPanier = document.querySelector("tbody");
 const follow = document.querySelector("div.breadcrumb");
 const btnReturnShop = document.querySelector("button.return-shop");
 const contentTotalSomme = document.querySelector("span.somme_total");
+const sectionMain = document.querySelector("section.cart");
 const id = localStorage.getItem("view")
 
 let totalSomme = 0
@@ -10,10 +11,8 @@ let articlesPanier = {}
 follow.innerHTML = `Home / My Account / History / ID /   <span style="font-weight: bold; color: #000;">${id}</span>`;
 
 document.addEventListener("DOMContentLoaded", async () => {
-    showLoader();
     
-
-    const result = await fetch(`hhttps://geekshop-back-end.onrender.com/commandes/get_info/${id}`,{
+    const result = await fetch(`https://geekshop-back-end.onrender.com/commandes/get_info/${id}`,{
         method: "GET",
         headers:{
             "content-type": "application/json",
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         location.href = "login.html"
     }
 
-    totalSomme = calculSomme(articlesPanier).toFixed(2);
+    totalSomme = calculSomme(articlesPanier);
     contentTotalSomme.textContent = `${totalSomme} €`;
     
     hiddenLoader();

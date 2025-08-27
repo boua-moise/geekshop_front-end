@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         follow.innerHTML = `Home / Category / ${data.response.categorie} / <span style="font-weight: bold; color: #000;">${data.response.nom}</span>`;
         showDescription(data.response)
     }
-})
+    hiddenLoader();
+});
 
 function showDescription(data) {
     contentDescription.innerHTML = 

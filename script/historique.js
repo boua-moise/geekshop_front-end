@@ -1,10 +1,9 @@
 const contentPanier = document.querySelector("tbody");
 const btnReturnShop = document.querySelector("button.return-shop");
-
+const sectionMain = document.querySelector("section.cart");
 
 
 document.addEventListener("DOMContentLoaded", async () => {
-    showLoader();
 
     const result = await fetch(`https://geekshop-back-end.onrender.com/commandes/get`,{
         method: "GET",

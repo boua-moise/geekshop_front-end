@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }else{
         location.href = "index.html";
     }
-    
+    hiddenLoader();
 });
 
 

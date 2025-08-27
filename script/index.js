@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
         iteration(hacking, blockArticle2);
         iteration(systeme, blockArticle3);
     }
+    hiddenLoader();
 });
 
 document.addEventListener('click', (e) => {

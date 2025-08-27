@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }else{
         location.href = location.origin;
     }
+    hiddenLoader();
 });
 
 products.addEventListener('click', (e) => {

@@ -23,7 +23,6 @@ let articlesPanier = {}
 // console.log(document.head.nextElementSibling.textContent);
 
 document.addEventListener("DOMContentLoaded", async () => {
-    showLoader();
     if (!isReload) {
         const resultUpdate = await fetch(`https://geekshop-back-end.onrender.com/panier/update/1?article_id=${id}`, {
             method: "PUT",
