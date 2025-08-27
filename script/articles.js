@@ -14,7 +14,7 @@ if (!categorie) {
 follow.innerHTML = `Home / Category / <span style="font-weight: bold; color: #000;">${categorie}</span>`;
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const result = await fetch(`http://127.0.0.1:8000/article/${categorie}`, {
+    const result = await fetch(`https://geekshop-back-end.onrender.com/article/${categorie}`, {
         method: "GET",
         headers:{
             "content-type": "application/json"

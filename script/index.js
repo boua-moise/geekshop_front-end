@@ -4,7 +4,7 @@ blockArticle3 = document.querySelector("div.trois");
 
 
 document.addEventListener('DOMContentLoaded', async (e) => {
-    const result = await fetch("http://127.0.0.1:8000/article/main", {
+    const result = await fetch("https://geekshop-back-end.onrender.com/article/main", {
         method: "GET",
         headers: {
             "content-type": "application/json"

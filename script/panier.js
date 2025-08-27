@@ -25,7 +25,7 @@ let articlesPanier = {}
 document.addEventListener("DOMContentLoaded", async () => {
     showLoader();
     if (!isReload) {
-        const resultUpdate = await fetch(`http://127.0.0.1:8000/panier/update/1?article_id=${id}`, {
+        const resultUpdate = await fetch(`https://geekshop-back-end.onrender.com/panier/update/1?article_id=${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     
 
-    const result = await fetch(`http://127.0.0.1:8000/panier/get`,{
+    const result = await fetch(`https://geekshop-back-end.onrender.com/panier/get`,{
         method: "GET",
         headers:{
             "content-type": "application/json",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         if (!isReload) {
             if (!articleId.includes(parseInt(id))) {
-                const restultAdd = fetch("http://127.0.0.1:8000/panier/add", {
+                const restultAdd = fetch("https://geekshop-back-end.onrender.com/panier/add", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",
@@ -124,7 +124,7 @@ contentPanier.addEventListener("click", async (e) => {
             articlesDelete.push(element.id);
         }
         
-        // const result = await fetch(`http://127.0.0.1:8000/panier/delete/${element.id}`, {
+        // const result = await fetch(`https://geekshop-back-end.onrender.com/panier/delete/${element.id}`, {
         //     method: "DELETE",
         //     headers: {
         //         "content-type": "application/json",
@@ -152,7 +152,7 @@ btnUpdate.addEventListener("click", async () => {
         if (Object.prototype.hasOwnProperty.call(articlesPanier, key)) {
             const element = articlesPanier[key];
             
-            const result = await fetch(`http://127.0.0.1:8000/panier/update/${element.id}?quantite=${element.quantite}`, {
+            const result = await fetch(`https://geekshop-back-end.onrender.com/panier/update/${element.id}?quantite=${element.quantite}`, {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json",
@@ -167,7 +167,7 @@ btnUpdate.addEventListener("click", async () => {
         for (const element of articlesDelete) {
             
             
-            const resultDelete = await fetch(`http://127.0.0.1:8000/panier/delete/${element}`, {
+            const resultDelete = await fetch(`https://geekshop-back-end.onrender.com/panier/delete/${element}`, {
                 method: "DELETE",
                 headers: {
                     "content-type": "application/json",
@@ -189,7 +189,7 @@ btnReturnShop.addEventListener("click", ()=> {
 
 btnByShop.addEventListener("click", async () => {
     showLoader();
-    const result = await fetch("http://127.0.0.1:8000/commandes/buy", {
+    const result = await fetch("https://geekshop-back-end.onrender.com/commandes/buy", {
         method: "POST",
         headers: {
             "content-type": "application/json",

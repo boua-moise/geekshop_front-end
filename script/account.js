@@ -4,7 +4,7 @@ const sectionForm = document.querySelector("section.profile-edit");
 
 document.addEventListener("DOMContentLoaded", async () => {
     
-    const result = await fetch("http://127.0.0.1:8000/auth/current_user", {
+    const result = await fetch("https://geekshop-back-end.onrender.com/auth/current_user", {
         method: "GET",
         headers: {
             "content-type": "application/json",

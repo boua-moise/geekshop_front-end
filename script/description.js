@@ -8,7 +8,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const result = await fetch(`http://127.0.0.1:8000/article/${id}/description`, {
+    const result = await fetch(`https://geekshop-back-end.onrender.com/article/${id}/description`, {
         method: "GET",
         headers: {
             "content-type": "application/json"

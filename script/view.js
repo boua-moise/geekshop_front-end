@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     showLoader();
     
 
-    const result = await fetch(`http://127.0.0.1:8000/commandes/get_info/${id}`,{
+    const result = await fetch(`hhttps://geekshop-back-end.onrender.com/commandes/get_info/${id}`,{
         method: "GET",
         headers:{
             "content-type": "application/json",

@@ -6,7 +6,7 @@ formSubmit.addEventListener("submit", async (e) => {
     const dataForm = new FormData(e.target);
     dataJson = Object.fromEntries(dataForm);
 
-    const result = await fetch("http://127.0.0.1:8000/auth/login", {
+    const result = await fetch("https://geekshop-back-end.onrender.com/auth/login", {
         method: "POST",
         headers: {
             "content-type": "application/json"

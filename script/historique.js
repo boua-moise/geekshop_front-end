@@ -6,7 +6,7 @@ const btnReturnShop = document.querySelector("button.return-shop");
 document.addEventListener("DOMContentLoaded", async () => {
     showLoader();
 
-    const result = await fetch(`http://127.0.0.1:8000/commandes/get`,{
+    const result = await fetch(`https://geekshop-back-end.onrender.com/commandes/get`,{
         method: "GET",
         headers:{
             "content-type": "application/json",
@@ -54,7 +54,7 @@ contentPanier.addEventListener("click",  async (e) =>{
     const node = e.target.id
     if (element.includes("encours")) {
         showLoader();
-        const result = await fetch(`http://127.0.0.1:8000/commandes/annuler/${node}`,{
+        const result = await fetch(`https://geekshop-back-end.onrender.com/commandes/annuler/${node}`,{
             method: "POST",
             headers:{
                 "content-type": "application/json",
