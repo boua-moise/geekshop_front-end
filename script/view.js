@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <td>
                         ${element.quantite}
                     </td>
-                    <td>${parseFloat(element.prix*element.quantite)}€</td>
+                    <td>${parseFloat(element.prix*element.quantite).toFixed(2)}€</td>
                 </tr>
             `;
         }
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         location.href = "login.html"
     }
 
-    totalSomme = calculSomme(articlesPanier);
+    totalSomme = calculSomme(articlesPanier).toFixed(2);
     contentTotalSomme.textContent = `${totalSomme} €`;
     
     hiddenLoader();
@@ -81,5 +81,5 @@ function calculSomme(tab) {
                 result += element.prix_initiale*element.quantite                
             }
         }
-    return result
+    return result.toFixed(2)
 }

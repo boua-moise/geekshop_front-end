@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <td>
                         <input type="number" id="${element.panier_id}" value="${element.quantite}" min="1">
                     </td>
-                    <td>${parseFloat(element.prix*element.quantite)}€</td>
+                    <td>${parseFloat(element.prix*element.quantite).toFixed(2)}€</td>
                     <td><input type="checkbox" id="${element.panier_id}"></td>
                 </tr>
             `;
@@ -139,9 +139,9 @@ contentPanier.addEventListener("click", async (e) => {
         articlesPanier[`${element.id}`]["quantite"] = parseFloat(input.value)
         const prixChange = articlesPanier[`${element.id}`]["prix_initiale"]*articlesPanier[`${element.id}`]["quantite"];
 
-        contentPrice.textContent = `${prixChange}€`
+        contentPrice.textContent = `${prixChange.toFixed(2)}€`
         
-        totalSomme = calculSomme(articlesPanier)
+        totalSomme = calculSomme(articlesPanier);
         contentTotalSomme.textContent = `${totalSomme} €`;
     }
 });
@@ -213,5 +213,5 @@ function calculSomme(tab) {
                 result += element.prix_initiale*element.quantite                
             }
         }
-    return result
+    return result.toFixed(2)
 }
