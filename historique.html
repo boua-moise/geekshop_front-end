@@ -34,17 +34,18 @@
 
         <main>
             <div class="breadcrumb">
-                Home / My Account / <span style="font-weight: bold; color: #000;">Cart</span>
+                Home / My Account / <span style="font-weight: bold; color: #000;">History</span>
             </div>
             <section class="cart">
                 <table>
                     <thead>
                         <tr>
-                            <th>Product</th>
-                            <th>Price</th>
+                            <th>ID</th>
                             <th>Quantity</th>
-                            <th>Subtotal</th>
-                            <th>Delete</th>
+                            <th>Total</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                            <th>View</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,21 +96,7 @@
                     </tbody>
                 </table>
                 <div class="cart-actions">
-                    <button class="return-shop">Return to Shop</button>
-                    <button class="update-cart">Update Cart</button>
-                </div>
-                <div class="cart-summary">
-                    <!-- <div class="coupon">
-                        <input type="text" placeholder="Coupon Code">
-                        <button class="apply-coupon">Apply Coupon</button>
-                    </div> -->
-                    <div class="total">
-                        <h3>Cart Total</h3>
-                        <!-- <p>Subtotal: <span>$750</span></p>
-                        <p>Shipping: <span>Free</span></p> -->
-                        <p>Total: <span class="somme_total">$750</span></p>
-                        <button class="proceed-checkout" id="buy">Proceed to checkout</button>
-                    </div>
+                    <button class="return-shop">Return</button>
                 </div>
             </section>
         </main>
@@ -122,6 +109,6 @@
     <div class="loader"><h1>LOADING...</h1></div>
 
     <script src="script/script.js"></script>
-    <script src="script/panier.js"></script>
+    <script src="script/historique.js"></script>
 </body>
 </html>

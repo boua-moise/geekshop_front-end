@@ -30,83 +30,80 @@ document.addEventListener("DOMContentLoaded", async () => {
         const prenom = dataUser.prenom
         
         header.innerHTML = 
-    `
-        <nav>
+        `
+            <nav>
 
-            <div class="logo"><a href="index.html">GeekShop</a></div>
+                <div class="logo"><a href="index.html">GeekShop</a></div>
 
-            <div class="nav-links">
-                <a href="index.html" class="index">Home</a>
+                <div class="nav-links">
+                    <a href="index.html" class="index">Home</a>
 
-                <span class="categorie-menu">
-                    <div class="categorie-btn articles">Category</div>
-                    <div class="dropdown-menu">
-                        <a href="articles.html?categorie=Hacking">Hacking</a>
-                        <a href="articles.html?categorie=Network">Network</a>
-                        <a href="articles.html?categorie=Systeme">Systeme</a>
-                        <a href="articles.html?categorie=Programmation">Programmation</a>
-                        <a href="articles.html?categorie=Hardware">Hardware</a>
-                        <a href="articles.html?categorie=Iot">Iot</a>
-                    </div>
-                </span>
+                    <span class="categorie-menu">
+                        <div class="categorie-btn articles">Category</div>
+                        <div class="dropdown-menu">
+                            <a href="articles.html?categorie=Hacking">Hacking</a>
+                            <a href="articles.html?categorie=Network">Network</a>
+                            <a href="articles.html?categorie=Systeme">Systeme</a>
+                            <a href="articles.html?categorie=Programmation">Programmation</a>
+                            <a href="articles.html?categorie=Hardware">Hardware</a>
+                            <a href="articles.html?categorie=Iot">Iot</a>
+                        </div>
+                    </span>
 
-                <a href="contact.html" class="contact">Contact</a>
-                <a href="apropos.html" class="apropos">About</a>
-            </div>
+                    <a href="contact.html" class="contact">Contact</a>
+                    <a href="apropos.html" class="apropos">About</a>
+                </div>
 
-            <div class="search-bar">
-                <input type="text" placeholder="What are you looking for?">
-                <button>🔍</button>
-            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="What are you looking for?">
+                    <button>🔍</button>
+                </div>
 
-            <div class="nav-right">
-                <div class="user-menu">
-                    <div class="user-btn">${dataUser.nom[0]}${dataUser.prenom[0]}</div>
-                    <div class="dropdown-menu">
-                        <a href="account.html">Manage My Account</a>
-                        <a href="#">My Order</a>
-                        <a href="#">My Cancellations</a>
-                        <a href="#">My Reviews</a>
-                        <a href="logout.html">Logout</a>
+                <div class="nav-right">
+                    <div class="user-menu">
+                        <div class="user-btn">${dataUser.nom[0]}${dataUser.prenom[0]}</div>
+                        <div class="dropdown-menu">
+                            <a href="account.html">Manage My Account</a>
+                            <a href="panier.html">My Card</a>
+                            <a href="historique.html">My History</a>
+                            <a href="logout.html">Logout</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    `
+            </nav>
+        `
     }else{
         header.innerHTML = 
-    `
-        <nav>
-            <div class="logo"><a href="index.html">GeekShop</a></div>
-            <div class="nav-links">
-                <a href="index.html" class="index">Home</a>
-                <span class="categorie-menu">
-                    <div class="categorie-btn articles">Category</div>
-                    <div class="dropdown-menu">
-                        <a href="articles.html?categorie=Hacking">Hacking</a>
-                        <a href="articles.html?categorie=Network">Network</a>
-                        <a href="articles.html?categorie=Systeme">Systeme</a>
-                        <a href="articles.html?categorie=Programmation">Programmation</a>
-                        <a href="articles.html?categorie=Hardware">Hardware</a>
-                        <a href="articles.html?categorie=Iot">Iot</a>
-                    </div>
-                </span>
-                <a href="contact.html" class="contact">Contact</a>
-                <a href="apropos.html" class="apropos">About</a>
-                <a href="singup.html" class="singup">Sign Up</a>
-                <a href="login.html" class="login">Log In</a>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="What are you looking for?">
-                <button>🔍</button>
-            </div>
-        </nav>
-    `
+        `
+            <nav>
+                <div class="logo"><a href="index.html">GeekShop</a></div>
+                <div class="nav-links">
+                    <a href="index.html" class="index">Home</a>
+                    <span class="categorie-menu">
+                        <div class="categorie-btn articles">Category</div>
+                        <div class="dropdown-menu">
+                            <a href="articles.html?categorie=Hacking">Hacking</a>
+                            <a href="articles.html?categorie=Network">Network</a>
+                            <a href="articles.html?categorie=Systeme">Systeme</a>
+                            <a href="articles.html?categorie=Programmation">Programmation</a>
+                            <a href="articles.html?categorie=Hardware">Hardware</a>
+                            <a href="articles.html?categorie=Iot">Iot</a>
+                        </div>
+                    </span>
+                    <a href="contact.html" class="contact">Contact</a>
+                    <a href="apropos.html" class="apropos">About</a>
+                    <a href="singup.html" class="singup">Sign Up</a>
+                    <a href="login.html" class="login">Log In</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="What are you looking for?">
+                    <button>🔍</button>
+                </div>
+            </nav>
+        `
     }
-    
-});
 
-footer.innerHTML = 
+    footer.innerHTML = 
     `
         <div class="footer-content">
             <div class="footer-section">
@@ -115,8 +112,8 @@ footer.innerHTML =
                 <p>📞 WhatApp: +91-1234</p>
                 <p>📞 +91-911-2132</p>
                 <div class="app-links">
-                    <a href="#"><img src="app-store.png" alt="App Store"></a>
-                    <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#"><img src="" alt="App Store"></a>
+                    <a href="#"><img src="" alt="Google Play"></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -141,12 +138,12 @@ footer.innerHTML =
         <div style="border-bottom: 1px solid #9e9e9e;"></div>
         <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
 
-    `
-
-window.addEventListener('load', () => {
-    main.style.display = "flex";
-    loader.style.display = "none";
+    `  
 });
+    window.addEventListener('load', () => {
+        main.style.display = "flex";
+        loader.style.display = "none";
+    });
 
 function hiddenLoader(){
     main.style.display = "flex";

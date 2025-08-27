@@ -4,6 +4,18 @@ a.panier{
 
 }
 
+.terminer{
+    color: #00aa2b;
+}
+
+.encours{
+    color: rgb(197, 197, 9);
+}
+
+.annuler{
+    color: red;
+}
+
 .breadcrumb {
     padding: 50px 285px;
     color: #888;
@@ -99,4 +111,29 @@ td input {
     border: none;
     cursor: pointer;
     width: 100%;
+}
+
+.proced-checkout {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    width: 100%;
+}
+
+.td-btn .annuler,.td-btn .terminer{
+    background: #ddd;
+    color: #000;
+}
+
+td.content-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-image span{
+    padding-left: 10px;
 }

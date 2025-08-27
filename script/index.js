@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', async (e) => {
         const hacking = data.hacking
         const systeme = data.systeme
         const network = data.network
-        iteration(hacking, blockArticle1);
-        iteration(systeme, blockArticle2);
-        iteration(network, blockArticle3);
+        iteration(network, blockArticle1);
+        iteration(hacking, blockArticle2);
+        iteration(systeme, blockArticle3);
     }
 });
 
