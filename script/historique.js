@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 contentPanier.addEventListener("click",  async (e) =>{
     const element = e.target.classList.value
     const node = e.target.id
-    if (element.includes("encours")) {
+    if (element.includes("encours") && node) {
         showLoader();
         const result = await fetch(`https://geekshop-back-end.onrender.com/commandes/annuler/${node}`,{
             method: "POST",
